@@ -34,6 +34,9 @@ export default {
       ]
     };
   },
+  fetch() {
+    this.$store.dispatch('posts/get');
+  },
   computed: {
     posts() {
       return this.$store.state.posts.all;
